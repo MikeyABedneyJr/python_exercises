@@ -10,7 +10,7 @@ now = datetime.datetime.now()
 #years.
 
 def year_when_100(age):
-	when_you_will_be_100 = now.year - age + 100
+	when_you_will_be_100 = now.year - age + 99
 	return when_you_will_be_100
 
 answer = year_when_100(age)
