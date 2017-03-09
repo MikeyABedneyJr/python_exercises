@@ -23,7 +23,8 @@ user_number = int(raw_input("Pick a numba' any numba':\n"))
 def even_or_odd(number):
 	if (number % 2 == 0):
 		print "Your number is EVEN!"
-
+		if (number % 4 == 0):
+			print "Your number is also divisible by 4. LUCKY YOU!!!"
 	else:
 		print "Your number is ODD!"
 
