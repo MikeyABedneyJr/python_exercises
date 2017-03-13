@@ -22,7 +22,7 @@ you which ones are less than another number...
 list = []
 counter = 0
 
-while counter < 11:
+while counter < 10:
 	user_number = raw_input("Please give us a number:\n")
 	list.append(user_number)
 	counter = counter + 1
