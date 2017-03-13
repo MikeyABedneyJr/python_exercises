@@ -29,3 +29,18 @@ def even_or_odd(number):
 		print "Your number is ODD!"
 
 even_or_odd(user_number)
+
+# Extra 2 task:
+num1 = int(raw_input("""
+	Bonus round: let's work on dividing two numbers.\n\n
+	Give me a number to be divided:\n
+	"""))
+num2 = int(raw_input("Give me a number to divide by:\n"))
+
+def bonus_even_or_odd(num1, num2):
+	if (num1 % num2 == 0):
+		print "Your numbers are evenly divided!"
+	else:
+		print "Your numbers do not divide evenly"
+
+bonus_even_or_odd(num1, num2)
