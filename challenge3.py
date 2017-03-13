@@ -27,3 +27,4 @@ while counter < 10:
 	list.append(user_number)
 	counter = counter + 1
 	print list
+
