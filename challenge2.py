@@ -32,9 +32,9 @@ even_or_odd(user_number)
 
 # Extra 2 task:
 num1 = int(raw_input("""
-	Bonus round: let's work on dividing two numbers.\n\n
-	Give me a number to be divided:\n
-	"""))
+Bonus round: let's work on dividing two numbers.\n\n
+Give me a number to be divided:\n
+"""))
 num2 = int(raw_input("Give me a number to divide by:\n"))
 
 def bonus_even_or_odd(num1, num2):
