@@ -24,7 +24,11 @@ counter = 0
 
 while counter < 10:
 	user_number = raw_input("Please give us a number:\n")
-	list.append(user_number)
-	counter = counter + 1
+	try:
+		val = int(user_number)
+		list.append(user_number)
+		counter = counter + 1
+	except ValueError:
+		print "Please use integers only."
 	print list
 
