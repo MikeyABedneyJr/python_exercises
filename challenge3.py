@@ -30,5 +30,21 @@ while counter < 10:
 		counter = counter + 1
 	except ValueError:
 		print "Please use integers only."
-	print list
 
+print list
+
+def get_less_than_value():
+    
+    start_value = raw_input("""\nNow tell me a new number and I will tell you 
+which one in your list are smaller. """)
+    try:
+        is_an_integer = int(start_value)
+        print is_an_integer
+
+    except ValueError:
+    	print("Soooo, remember we need real numbers here.  Try again!")
+    	get_less_than_value()
+
+get_less_than_value()
+
+# TODO: Create function to compare list to the 2nd number given and print < 2nd number
