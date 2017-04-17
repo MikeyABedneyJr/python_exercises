@@ -35,16 +35,19 @@ print list
 
 def get_less_than_value():
     
-    start_value = raw_input("""\nNow tell me a new number and I will tell you 
-which one in your list are smaller. """)
+    start_value = input("""\nNow tell me a new number and I will tell you which one in your list are smaller. """)
     try:
         is_an_integer = int(start_value)
-        print is_an_integer
+        # print is_an_integer
 
     except ValueError:
-    	print("Soooo, remember we need real numbers here.  Try again!")
+    	print("Soooo, remember we need integers (whole numbers) here.  Try again!")
     	get_less_than_value()
 
-get_less_than_value()
+    for values in list:
+    	if values <= start_value:
+    		print ("%s is less than %s" % (values, start_value))
+    	else:
+    		print ("%s is MORE than %s" % (values, start_value))
 
-# TODO: Create function to compare list to the 2nd number given and print < 2nd number
+get_less_than_value()
