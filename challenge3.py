@@ -27,15 +27,16 @@ counter = 0
 
 
 while counter < 10:
-	user_number = raw_input("Please give us a number:\n")
+    user_number = raw_input("Please give us a number:\n")
 	
-    # Make sure the input is an integer, if not, ask again & do *not* increment our counter
+    # Make sure the input is an integer, if not, ask again & do *not* 
+    #  increment our counter
     try:
-		val = int(user_number)
-		list.append(int(user_number))
-		counter = counter + 1
-	except ValueError:
-		print "Please use integers only."
+        val = int(user_number)
+        list.append(int(user_number))
+        counter = counter + 1
+    except ValueError:
+        print "Please use integers only."
 
 # Print the list so users will see what they chose before comparing values
 print list
