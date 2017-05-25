@@ -16,6 +16,9 @@ import random
 from random import randint
 
 
-random_list = random.sample(xrange(101),randint(1, 101))
+random_list_1 = random.sample(xrange(101),randint(1, 101))
+random_list_2 = random.sample(xrange(101),randint(1, 101))
 
-print random_list
+x = list(set(random_list_1).intersection(set(random_list_2)))
+
+print "Here is list 1:\n", random_list_1, "\n\nHere is list 2:\n", random_list_2, "\n\nAnd their intersection is:\n", x
