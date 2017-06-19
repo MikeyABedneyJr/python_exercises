@@ -9,6 +9,25 @@ Rock beats scissors
 Scissors beats paper
 Paper beats rock
 """
-user_move = raw_input("Welcome to Rock, Paper Scissors! Please choose one of the following options: \nRock\nPaper\nScissors\n:").lower()
+game_on = True
 
-print user_move
+while (game_on == True):
+	user_move = raw_input("Welcome to Rock, Paper Scissors! Please choose one of the following options: \nRock\nPaper\nScissors\n:").lower()
+	print user_move
+
+	game_on == False
+
+	print game_on
+
+### TODO: Just use BREAK as instructed to stop this forever while loop
+
+# Check that spelling/word is one of the 3 options
+  # Make a list ot check against
+
+# Set rules of what beats what
+
+# Randomly generate computer's move/choice
+
+# Check who wins/loses
+
+# Ask to play again
