@@ -2,32 +2,37 @@
 http://www.practicepython.org/exercise/2014/03/26/08-rock-paper-scissors.html
 
 Make a two-player Rock-Paper-Scissors game. (Hint: Ask for player plays (using input), compare them, print out a message of congratulations to the winner, and ask if the players want to start a new game)
-
-Remember the rules:
-
-Rock beats scissors
-Scissors beats paper
-Paper beats rock
 """
-game_on = True
+import random
 
-while (game_on == True):
-	user_move = raw_input("Welcome to Rock, Paper Scissors! Please choose one of the following options: \nRock\nPaper\nScissors\n:").lower()
-	print user_move
+p = 1
 
-	game_on == False
+while (p < 2):
+	user_move = raw_input("Rock, Paper Scissors is fun for the whole family! Please choose one of the following options: \nRock\nPaper\nScissors\n:").lower()
 
-	print game_on
+	move_options = ['rock', 'paper', 'scissors']
 
-### TODO: Just use BREAK as instructed to stop this forever while loop
+	computer_move = random.choice(move_options)
 
-# Check that spelling/word is one of the 3 options
-  # Make a list ot check against
 
-# Set rules of what beats what
+	print ("Human chooses %s and computer chooses %s" % (user_move,computer_move))
 
-# Randomly generate computer's move/choice
+	if (user_move == 'rock' and computer_move == 'scissors'):
+		print "The human wins!"
 
-# Check who wins/loses
+	elif (user_move == 'paper' and computer_move == 'rock'):
+		print "The human wins!"
 
-# Ask to play again
+	elif (user_move == 'scissors' and computer_move == 'paper'):
+		print "The human wins!"
+
+	elif (user_move == computer_move):
+		print "It's a tie!"
+
+	else:
+		print "The computer wins!"
+
+	play_again = raw_input("Did you want to play again? Answer 'yes' or 'no': ").lower()
+
+	if (play_again == 'no'):
+		p = p + 1
