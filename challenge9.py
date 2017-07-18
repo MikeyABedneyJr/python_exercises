@@ -8,12 +8,15 @@ Extras:
 	Keep track of how many guesses the user has taken, and when the game ends, print this out.
 """
 
+# TODO: Add extra #2 and stop user from entering string which breaks program
 import random
 from random import randint
+import time
 
 secret_number = random.randint(1, 9)
 print "I'm thinking of a number between 1 & 9 (including 1 & 9)."
 p = 0
+time.sleep(1,5)
 
 while (p < 1):
 	print ("Current secret number is: %s" % secret_number)
