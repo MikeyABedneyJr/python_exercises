@@ -57,7 +57,7 @@ while (p < 1):
 			print "Oh I get it...we're done here then. It's fine. I'll be fine...just go...."
 		
 		# User chooses to play again, make a new number and reset the counter. While loop
-		# continues...
+		# keeps going.
 		else:
 			secret_number = random.randint(1, 9)
 			counter = 0
