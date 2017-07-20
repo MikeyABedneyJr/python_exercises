@@ -7,8 +7,6 @@ Extras:
 	Keep the game going until the user types **exit**
 	Keep track of how many guesses the user has taken, and when the game ends, print this out.
 """
-
-# TODO: Add extra #2 and stop user from entering string which breaks program
 import random
 from random import randint
 import time
@@ -46,6 +44,7 @@ while (p < 1):
 
 
 	else:
+		# User wins & this tells them how many guesses it took to get it right
 		print ("You won! Number of guesses: %s" % counter)
 		time.sleep(1.5)
 
