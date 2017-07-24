@@ -1,0 +1,2 @@
+# http://www.practicepython.org/exercise/2014/04/10/10-list-overlap-comprehensions.html
+# This example was actually completed the way challenge 5 was coded (including the extra). Therefore this doc is just a placeholder so I won't think I skipped a challenge.
